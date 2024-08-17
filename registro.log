@@ -13,3 +13,17 @@
 [2024-08-17 15:04:50] [ INFO ] [OdontologoService:28] Número de odontólogos encontrados: 2
 [2024-08-17 15:04:50] [ INFO ] [OdontologoServiceTest:28] Lista de odontólogos obtenida con DAO H2: [com.example.clinicaOdontologica.Model.Odontologo@264f218, com.example.clinicaOdontologica.Model.Odontologo@3576ddc2]
 [2024-08-17 15:04:50] [ INFO ] [OdontologoServiceTest:32] La lista de odontólogos con DAO H2 no está vacía
+[2024-08-17 16:12:24] [ INFO ] [OdontologoServiceTest:19] Iniciando pruebaGuardarOdontologo...
+[2024-08-17 16:12:24] [ INFO ] [BD:32] datos cargados con exito
+[2024-08-17 16:12:24] [ INFO ] [OdontologoService:26] Listando todos los odontólogos
+[2024-08-17 16:12:24] [ INFO ] [OdontologoDAOH2:51] iniciando las operaciones de listado
+[2024-08-17 16:12:24] [ INFO ] [OdontologoService:28] Número de odontólogos encontrados: 2
+[2024-08-17 16:12:24] [ INFO ] [OdontologoServiceTest:28] Lista de odontólogos obtenida con DAO H2: [com.example.clinicaOdontologica.Model.Odontologo@264f218, com.example.clinicaOdontologica.Model.Odontologo@3576ddc2]
+[2024-08-17 16:12:24] [ INFO ] [OdontologoServiceTest:32] La lista de odontólogos con DAO H2 no está vacía
+[2024-08-17 16:19:05] [ INFO ] [OdontologoServiceTest:19] Iniciando pruebaGuardarOdontologo...
+[2024-08-17 16:19:05] [ INFO ] [BD:32] datos cargados con exito
+[2024-08-17 16:19:05] [ INFO ] [OdontologoService:26] Listando todos los odontólogos
+[2024-08-17 16:19:05] [ INFO ] [OdontologoDAOH2:51] iniciando las operaciones de listado
+[2024-08-17 16:19:05] [ INFO ] [OdontologoService:28] Número de odontólogos encontrados: 2
+[2024-08-17 16:19:05] [ INFO ] [OdontologoServiceTest:28] Lista de odontólogos obtenida con DAO H2: [com.example.clinicaOdontologica.Model.Odontologo@47c81abf, com.example.clinicaOdontologica.Model.Odontologo@776a6d9b]
+[2024-08-17 16:19:05] [ INFO ] [OdontologoServiceTest:32] La lista de odontólogos con DAO H2 no está vacía
