@@ -1,0 +1,15 @@
+[2024-08-17 15:04:36] [ INFO ] [PacienteServiceTest:15] Iniciando pruebaBusquedaPaciente...
+[2024-08-17 15:04:36] [ INFO ] [BD:32] datos cargados con exito
+[2024-08-17 15:04:36] [ INFO ] [PacienteService:23] Buscando paciente con ID: 2
+[2024-08-17 15:04:36] [ INFO ] [PacienteDAOH2:82] iniciando las operaciones de : busqueda  de un paciente: 2
+[2024-08-17 15:04:36] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 2
+[2024-08-17 15:04:36] [ INFO ] [PacienteService:26] Paciente encontrado: com.example.clinicaOdontologica.Model.Paciente@2ca26d77
+[2024-08-17 15:04:36] [ INFO ] [PacienteServiceTest:23] Paciente encontrado: com.example.clinicaOdontologica.Model.Paciente@2ca26d77
+[2024-08-17 15:04:36] [ INFO ] [PacienteServiceTest:27] El apellido del paciente es el esperado: Vasquez
+[2024-08-17 15:04:50] [ INFO ] [OdontologoServiceTest:19] Iniciando pruebaGuardarOdontologo...
+[2024-08-17 15:04:50] [ INFO ] [BD:32] datos cargados con exito
+[2024-08-17 15:04:50] [ INFO ] [OdontologoService:26] Listando todos los odontólogos
+[2024-08-17 15:04:50] [ INFO ] [OdontologoDAOH2:51] iniciando las operaciones de listado
+[2024-08-17 15:04:50] [ INFO ] [OdontologoService:28] Número de odontólogos encontrados: 2
+[2024-08-17 15:04:50] [ INFO ] [OdontologoServiceTest:28] Lista de odontólogos obtenida con DAO H2: [com.example.clinicaOdontologica.Model.Odontologo@264f218, com.example.clinicaOdontologica.Model.Odontologo@3576ddc2]
+[2024-08-17 15:04:50] [ INFO ] [OdontologoServiceTest:32] La lista de odontólogos con DAO H2 no está vacía
