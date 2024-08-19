@@ -27,3 +27,41 @@
 [2024-08-17 16:19:05] [ INFO ] [OdontologoService:28] Número de odontólogos encontrados: 2
 [2024-08-17 16:19:05] [ INFO ] [OdontologoServiceTest:28] Lista de odontólogos obtenida con DAO H2: [com.example.clinicaOdontologica.Model.Odontologo@47c81abf, com.example.clinicaOdontologica.Model.Odontologo@776a6d9b]
 [2024-08-17 16:19:05] [ INFO ] [OdontologoServiceTest:32] La lista de odontólogos con DAO H2 no está vacía
+[2024-08-18 20:39:15] [ INFO ] [PacienteServiceTest:15] Iniciando pruebaBusquedaPaciente...
+[2024-08-18 20:39:15] [ INFO ] [BD:32] datos cargados con exito
+[2024-08-18 20:39:15] [ INFO ] [PacienteService:23] Buscando paciente con ID: 2
+[2024-08-18 20:39:15] [ INFO ] [PacienteDAOH2:82] iniciando las operaciones de : busqueda  de un paciente: 2
+[2024-08-18 20:39:15] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 2
+[2024-08-18 20:39:15] [ INFO ] [PacienteService:26] Paciente encontrado: com.example.clinicaOdontologica.Model.Paciente@4c5ae43b
+[2024-08-18 20:39:15] [ INFO ] [PacienteServiceTest:23] Paciente encontrado: com.example.clinicaOdontologica.Model.Paciente@4c5ae43b
+[2024-08-18 20:39:15] [ INFO ] [PacienteServiceTest:27] El apellido del paciente es el esperado: Vasquez
+[2024-08-18 20:56:44] [ INFO ] [PacienteServiceTest:15] Iniciando pruebaBusquedaPaciente...
+[2024-08-18 20:56:44] [ INFO ] [BD:36] datos cargados con exito
+[2024-08-18 20:56:44] [ INFO ] [PacienteService:25] Buscando paciente con ID: 2
+[2024-08-18 20:56:44] [ INFO ] [PacienteDAOH2:133] Iniciando las operaciones de: búsqueda de paciente con ID: 2
+[2024-08-18 20:56:44] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 2
+[2024-08-18 20:56:44] [ INFO ] [PacienteService:28] Paciente encontrado: com.example.clinicaOdontologica.Model.Paciente@4c5ae43b
+[2024-08-18 20:56:44] [ INFO ] [PacienteServiceTest:23] Paciente encontrado: com.example.clinicaOdontologica.Model.Paciente@4c5ae43b
+[2024-08-18 20:56:44] [ INFO ] [PacienteServiceTest:27] El apellido del paciente es el esperado: Vasquez
+[2024-08-18 21:01:43] [ INFO ] [PacienteService:37] Listando todos los pacientes
+[2024-08-18 21:01:43] [ INFO ] [PacienteDAOH2:21] Iniciando las operaciones de: listar todos los pacientes
+[2024-08-18 21:01:43] [ ERROR] [PacienteDAOH2:43] Problemas con la BD: org.h2.Driver
+[2024-08-18 21:03:00] [ INFO ] [PacienteService:37] Listando todos los pacientes
+[2024-08-18 21:03:00] [ INFO ] [PacienteDAOH2:21] Iniciando las operaciones de: listar todos los pacientes
+[2024-08-18 21:03:00] [ ERROR] [PacienteDAOH2:43] Problemas con la BD: org.h2.Driver
+[2024-08-18 21:06:55] [ INFO ] [PacienteServiceTest:15] Iniciando pruebaBusquedaPaciente...
+[2024-08-18 21:06:55] [ INFO ] [BD:36] datos cargados con exito
+[2024-08-18 21:06:55] [ INFO ] [PacienteService:26] Buscando paciente con ID: 2
+[2024-08-18 21:06:55] [ INFO ] [PacienteDAOH2:133] Iniciando las operaciones de: búsqueda de paciente con ID: 2
+[2024-08-18 21:06:55] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 2
+[2024-08-18 21:06:55] [ INFO ] [PacienteService:29] Paciente encontrado: com.example.clinicaOdontologica.Model.Paciente@4c5ae43b
+[2024-08-18 21:06:55] [ INFO ] [PacienteServiceTest:23] Paciente encontrado: com.example.clinicaOdontologica.Model.Paciente@4c5ae43b
+[2024-08-18 21:06:55] [ INFO ] [PacienteServiceTest:27] El apellido del paciente es el esperado: Vasquez
+[2024-08-19 14:29:48] [ INFO ] [PacienteServiceTest:15] Iniciando pruebaBusquedaPaciente...
+[2024-08-19 14:29:49] [ INFO ] [BD:36] datos cargados con exito
+[2024-08-19 14:29:49] [ INFO ] [PacienteService:26] Buscando paciente con ID: 2
+[2024-08-19 14:29:49] [ INFO ] [PacienteDAOH2:133] Iniciando las operaciones de: búsqueda de paciente con ID: 2
+[2024-08-19 14:29:49] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 2
+[2024-08-19 14:29:49] [ INFO ] [PacienteService:29] Paciente encontrado: com.example.clinicaOdontologica.Model.Paciente@6c7a164b
+[2024-08-19 14:29:49] [ INFO ] [PacienteServiceTest:23] Paciente encontrado: com.example.clinicaOdontologica.Model.Paciente@6c7a164b
+[2024-08-19 14:29:49] [ INFO ] [PacienteServiceTest:27] El apellido del paciente es el esperado: Vasquez
