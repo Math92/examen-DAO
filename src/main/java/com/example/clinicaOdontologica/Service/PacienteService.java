@@ -11,6 +11,8 @@ public class PacienteService {
     private static final Logger logger = Logger.getLogger(PacienteService.class);
     private iDao<Paciente> pacienteiDao;
 
+
+
     public PacienteService() {
         pacienteiDao = new PacienteDAOH2();
     }
@@ -36,6 +38,12 @@ public class PacienteService {
     public List<Paciente> listarTodosLosPacientes() {
         logger.info("Listando todos los pacientes");
         return pacienteiDao.listarTodos();
+    }
+
+    public void eliminarPaciente(Integer id) {
+        logger.info("Eliminando paciente con ID: " + id);
+        pacienteiDao.eliminar(id);
+        logger.info("Paciente con ID: " + id + " eliminado.");
     }
 
     public Paciente buscarPorEmail(String email) {

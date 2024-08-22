@@ -2,9 +2,9 @@ package com.example.clinicaOdontologica.Model;
 
 public class Odontologo {
     private Integer id;
-    private String numeroMatricula;
     private String nombre;
     private String apellido;
+    private String numeroMatricula;
 
     public Odontologo(String apellido, String nombre, String numeroMatricula) {
         this.apellido = apellido;

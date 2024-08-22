@@ -121,3 +121,116 @@
 [2024-08-19 15:04:43] [ INFO ] [PacienteService:37] Listando todos los pacientes
 [2024-08-19 15:04:43] [ INFO ] [PacienteDAOH2:21] Iniciando las operaciones de: listar todos los pacientes
 [2024-08-19 15:04:43] [ ERROR] [PacienteDAOH2:43] Problemas con la BD: org.h2.Driver
+[2024-08-20 20:22:12] [ INFO ] [PacienteService:37] Listando todos los pacientes
+[2024-08-20 20:22:12] [ INFO ] [PacienteDAOH2:21] Iniciando las operaciones de: listar todos los pacientes
+[2024-08-20 20:22:12] [ ERROR] [PacienteDAOH2:43] Problemas con la BD: org.h2.Driver
+[2024-08-20 20:23:15] [ INFO ] [PacienteServiceTest:15] Iniciando pruebaBusquedaPaciente...
+[2024-08-20 20:23:16] [ INFO ] [BD:36] datos cargados con exito
+[2024-08-20 20:23:16] [ INFO ] [PacienteService:26] Buscando paciente con ID: 2
+[2024-08-20 20:23:16] [ INFO ] [PacienteDAOH2:133] Iniciando las operaciones de: búsqueda de paciente con ID: 2
+[2024-08-20 20:23:16] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 2
+[2024-08-20 20:23:16] [ INFO ] [PacienteService:29] Paciente encontrado: com.example.clinicaOdontologica.Model.Paciente@4c5ae43b
+[2024-08-20 20:23:16] [ INFO ] [PacienteServiceTest:23] Paciente encontrado: com.example.clinicaOdontologica.Model.Paciente@4c5ae43b
+[2024-08-20 20:23:16] [ INFO ] [PacienteServiceTest:27] El apellido del paciente es el esperado: Vasquez
+[2024-08-20 20:47:16] [ ERROR] [BD:38] error inesperado: org.h2.Driver
+[2024-08-20 20:49:52] [ INFO ] [PacienteServiceTest:15] Iniciando pruebaBusquedaPaciente...
+[2024-08-20 20:49:52] [ INFO ] [BD:36] datos cargados con exito
+[2024-08-20 20:49:52] [ INFO ] [PacienteService:26] Buscando paciente con ID: 2
+[2024-08-20 20:49:52] [ INFO ] [PacienteDAOH2:133] Iniciando las operaciones de: búsqueda de paciente con ID: 2
+[2024-08-20 20:49:52] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 2
+[2024-08-20 20:49:52] [ INFO ] [PacienteService:29] Paciente encontrado: com.example.clinicaOdontologica.Model.Paciente@4c5ae43b
+[2024-08-20 20:49:52] [ INFO ] [PacienteServiceTest:23] Paciente encontrado: com.example.clinicaOdontologica.Model.Paciente@4c5ae43b
+[2024-08-20 20:49:52] [ INFO ] [PacienteServiceTest:27] El apellido del paciente es el esperado: Vasquez
+[2024-08-20 22:15:54] [ ERROR] [BD:38] error inesperado: org.h2.Driver
+[2024-08-20 22:19:13] [ INFO ] [PacienteService:44] Buscando paciente con email: helen.vasquez@example.com
+[2024-08-20 22:19:13] [ INFO ] [PacienteDAOH2:56] Iniciando la operación de búsqueda de paciente por email: helen.vasquez@example.com
+[2024-08-20 22:19:13] [ ERROR] [PacienteDAOH2:78] Problemas con la BD: org.h2.Driver
+[2024-08-20 22:19:57] [ INFO ] [PacienteService:44] Buscando paciente con email: julian.espinoza@example.com
+[2024-08-20 22:19:57] [ INFO ] [PacienteDAOH2:56] Iniciando la operación de búsqueda de paciente por email: julian.espinoza@example.com
+[2024-08-20 22:19:57] [ ERROR] [PacienteDAOH2:78] Problemas con la BD: org.h2.Driver
+[2024-08-20 22:21:39] [ INFO ] [PacienteService:44] Buscando paciente con email: julian.espinoza@example.com
+[2024-08-20 22:21:39] [ INFO ] [PacienteDAOH2:56] Iniciando la operación de búsqueda de paciente por email: julian.espinoza@example.com
+[2024-08-20 22:21:39] [ ERROR] [PacienteDAOH2:78] Problemas con la BD: org.h2.Driver
+[2024-08-20 22:21:41] [ INFO ] [PacienteService:44] Buscando paciente con email: julian.espinoza@example.com
+[2024-08-20 22:21:41] [ INFO ] [PacienteDAOH2:56] Iniciando la operación de búsqueda de paciente por email: julian.espinoza@example.com
+[2024-08-20 22:21:41] [ ERROR] [PacienteDAOH2:78] Problemas con la BD: org.h2.Driver
+[2024-08-20 22:28:01] [ INFO ] [OdontologoServiceTest:19] Iniciando pruebaGuardarOdontologo...
+[2024-08-20 22:28:02] [ INFO ] [BD:36] datos cargados con exito
+[2024-08-20 22:28:02] [ INFO ] [OdontologoService:26] Listando todos los odontólogos
+[2024-08-20 22:28:02] [ INFO ] [OdontologoDAOH2:51] iniciando las operaciones de listado
+[2024-08-20 22:28:02] [ INFO ] [OdontologoService:28] Número de odontólogos encontrados: 2
+[2024-08-20 22:28:02] [ INFO ] [OdontologoServiceTest:28] Lista de odontólogos obtenida con DAO H2: [com.example.clinicaOdontologica.Model.Odontologo@51133c06, com.example.clinicaOdontologica.Model.Odontologo@4b213651]
+[2024-08-20 22:28:02] [ INFO ] [OdontologoServiceTest:32] La lista de odontólogos con DAO H2 no está vacía
+[2024-08-20 22:28:02] [ INFO ] [PacienteServiceTest:15] Iniciando pruebaBusquedaPaciente...
+[2024-08-20 22:28:02] [ INFO ] [BD:36] datos cargados con exito
+[2024-08-20 22:28:02] [ INFO ] [PacienteService:28] Buscando paciente con ID: 2
+[2024-08-20 22:28:02] [ INFO ] [PacienteDAOH2:134] Iniciando las operaciones de: búsqueda de paciente con ID: 2
+[2024-08-20 22:28:02] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 2
+[2024-08-20 22:28:02] [ INFO ] [PacienteService:31] Paciente encontrado: com.example.clinicaOdontologica.Model.Paciente@132e0cc
+[2024-08-20 22:28:02] [ INFO ] [PacienteServiceTest:23] Paciente encontrado: com.example.clinicaOdontologica.Model.Paciente@132e0cc
+[2024-08-20 22:28:02] [ INFO ] [PacienteServiceTest:27] El apellido del paciente es el esperado: Vasquez
+[2024-08-20 22:29:16] [ ERROR] [BD:38] error inesperado: org.h2.Driver
+[2024-08-20 22:37:49] [ ERROR] [BD:38] error inesperado: org.h2.Driver
+[2024-08-20 22:38:15] [ INFO ] [PacienteService:44] Buscando paciente con email: julian.espinoza@example.com
+[2024-08-20 22:38:15] [ INFO ] [PacienteDAOH2:56] Iniciando la operación de búsqueda de paciente por email: julian.espinoza@example.com
+[2024-08-20 22:38:15] [ ERROR] [PacienteDAOH2:78] Problemas con la BD: org.h2.Driver
+[2024-08-20 22:38:16] [ INFO ] [PacienteService:44] Buscando paciente con email: julian.espinoza@example.com
+[2024-08-20 22:38:16] [ INFO ] [PacienteDAOH2:56] Iniciando la operación de búsqueda de paciente por email: julian.espinoza@example.com
+[2024-08-20 22:38:16] [ ERROR] [PacienteDAOH2:78] Problemas con la BD: org.h2.Driver
+[2024-08-20 22:38:16] [ INFO ] [PacienteService:44] Buscando paciente con email: julian.espinoza@example.com
+[2024-08-20 22:38:16] [ INFO ] [PacienteDAOH2:56] Iniciando la operación de búsqueda de paciente por email: julian.espinoza@example.com
+[2024-08-20 22:38:16] [ ERROR] [PacienteDAOH2:78] Problemas con la BD: org.h2.Driver
+[2024-08-20 22:45:56] [ ERROR] [BD:38] error inesperado: org.h2.Driver
+[2024-08-20 22:59:32] [ ERROR] [BD:38] error inesperado: org.h2.Driver
+[2024-08-22 17:51:20] [ INFO ] [PacienteServiceTest:15] Iniciando pruebaBusquedaPaciente...
+[2024-08-22 17:51:21] [ INFO ] [BD:36] datos cargados con exito
+[2024-08-22 17:51:21] [ INFO ] [PacienteService:28] Buscando paciente con ID: 2
+[2024-08-22 17:51:21] [ INFO ] [PacienteDAOH2:175] Iniciando las operaciones de: búsqueda de paciente con ID: 2
+[2024-08-22 17:51:21] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 2
+[2024-08-22 17:51:21] [ INFO ] [PacienteService:31] Paciente encontrado: com.example.clinicaOdontologica.Model.Paciente@6c7a164b
+[2024-08-22 17:51:21] [ INFO ] [PacienteServiceTest:23] Paciente encontrado: com.example.clinicaOdontologica.Model.Paciente@6c7a164b
+[2024-08-22 17:51:21] [ INFO ] [PacienteServiceTest:27] El apellido del paciente es el esperado: Vasquez
+[2024-08-22 17:51:27] [ ERROR] [BD:38] error inesperado: org.h2.Driver
+[2024-08-22 17:57:37] [ ERROR] [BD:38] error inesperado: org.h2.Driver
+[2024-08-22 17:59:49] [ ERROR] [BD:38] error inesperado: org.h2.Driver
+[2024-08-22 18:08:30] [ ERROR] [BD:35] error inesperado: org.h2.Driver
+[2024-08-22 18:20:01] [ ERROR] [BD:35] error inesperado: org.h2.Driver
+[2024-08-22 18:26:27] [ ERROR] [BD:34] error inesperado: org.h2.Driver
+[2024-08-22 18:28:39] [ INFO ] [BD:32] datos cargados con exito
+[2024-08-22 18:42:15] [ INFO ] [BD:32] datos cargados con exito
+[2024-08-22 18:43:20] [ INFO ] [PacienteService:39] Listando todos los pacientes
+[2024-08-22 18:43:20] [ INFO ] [PacienteDAOH2:23] Iniciando las operaciones de: listar todos los pacientes
+[2024-08-22 18:43:20] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 1
+[2024-08-22 18:43:20] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 2
+[2024-08-22 18:44:35] [ INFO ] [PacienteService:39] Listando todos los pacientes
+[2024-08-22 18:44:35] [ INFO ] [PacienteDAOH2:23] Iniciando las operaciones de: listar todos los pacientes
+[2024-08-22 18:44:35] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 1
+[2024-08-22 18:44:35] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 2
+[2024-08-22 18:45:10] [ INFO ] [PacienteService:28] Buscando paciente con ID: 1
+[2024-08-22 18:45:10] [ INFO ] [PacienteDAOH2:175] Iniciando las operaciones de: búsqueda de paciente con ID: 1
+[2024-08-22 18:45:10] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 1
+[2024-08-22 18:45:10] [ INFO ] [PacienteService:31] Paciente encontrado: com.example.clinicaOdontologica.Model.Paciente@6d024ddd
+[2024-08-22 18:45:39] [ INFO ] [PacienteService:28] Buscando paciente con ID: 1
+[2024-08-22 18:45:39] [ INFO ] [PacienteDAOH2:175] Iniciando las operaciones de: búsqueda de paciente con ID: 1
+[2024-08-22 18:45:39] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 1
+[2024-08-22 18:45:39] [ INFO ] [PacienteService:31] Paciente encontrado: com.example.clinicaOdontologica.Model.Paciente@1dc1a6ee
+[2024-08-22 18:45:39] [ INFO ] [PacienteService:44] Eliminando paciente con ID: 1
+[2024-08-22 18:45:39] [ INFO ] [PacienteDAOH2:154] Iniciando las operaciones de: eliminación de paciente con ID: 1
+[2024-08-22 18:45:39] [ INFO ] [PacienteDAOH2:161] Paciente con ID: 1 eliminado exitosamente.
+[2024-08-22 18:45:39] [ INFO ] [PacienteService:46] Paciente con ID: 1 eliminado.
+[2024-08-22 18:46:09] [ INFO ] [PacienteService:28] Buscando paciente con ID: 1
+[2024-08-22 18:46:09] [ INFO ] [PacienteDAOH2:175] Iniciando las operaciones de: búsqueda de paciente con ID: 1
+[2024-08-22 18:46:09] [ WARN ] [PacienteService:33] Paciente con ID 1 no encontrado
+[2024-08-22 18:46:26] [ INFO ] [PacienteService:39] Listando todos los pacientes
+[2024-08-22 18:46:26] [ INFO ] [PacienteDAOH2:23] Iniciando las operaciones de: listar todos los pacientes
+[2024-08-22 18:46:26] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 2
+[2024-08-22 18:47:12] [ INFO ] [PacienteService:28] Buscando paciente con ID: 2
+[2024-08-22 18:47:12] [ INFO ] [PacienteDAOH2:175] Iniciando las operaciones de: búsqueda de paciente con ID: 2
+[2024-08-22 18:47:12] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 2
+[2024-08-22 18:47:12] [ INFO ] [PacienteService:31] Paciente encontrado: com.example.clinicaOdontologica.Model.Paciente@270ed4e2
+[2024-08-22 18:47:12] [ INFO ] [PacienteService:44] Eliminando paciente con ID: 2
+[2024-08-22 18:47:12] [ INFO ] [PacienteDAOH2:154] Iniciando las operaciones de: eliminación de paciente con ID: 2
+[2024-08-22 18:47:12] [ INFO ] [PacienteDAOH2:161] Paciente con ID: 2 eliminado exitosamente.
+[2024-08-22 18:47:12] [ INFO ] [PacienteService:46] Paciente con ID: 2 eliminado.
+[2024-08-22 18:47:19] [ INFO ] [PacienteService:39] Listando todos los pacientes
+[2024-08-22 18:47:19] [ INFO ] [PacienteDAOH2:23] Iniciando las operaciones de: listar todos los pacientes
