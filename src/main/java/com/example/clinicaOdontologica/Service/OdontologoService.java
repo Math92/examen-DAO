@@ -4,13 +4,15 @@ import com.example.clinicaOdontologica.Dao.OdontologoDAOH2;
 import com.example.clinicaOdontologica.Dao.iDao;
 import com.example.clinicaOdontologica.Model.Odontologo;
 import org.apache.log4j.Logger;
-import java.util.List;
+import org.springframework.stereotype.Service;
 
+import java.util.List;
+@Service
 public class OdontologoService {
     private static final Logger logger = Logger.getLogger(OdontologoService.class);
     private iDao<Odontologo> odontologoiDao;
 
-    public OdontologoService(boolean b) {
+    public OdontologoService() {
         odontologoiDao = new OdontologoDAOH2();
        // odontologoiDao = new OdontologoDAOInMemory(); // Usa DAO en memoria
     }
@@ -19,6 +21,17 @@ public class OdontologoService {
         logger.info("Intentando guardar odontólogo: " + odontologo);
         Odontologo result = odontologoiDao.guardar(odontologo);
         logger.info("Odontólogo guardado con éxito: " + result);
+        return result;
+    }
+
+    public Odontologo buscarPorID(Integer id){
+        logger.info("Buscando odontologo con ID: " + id);
+        Odontologo result = odontologoiDao.buscarporId(id);
+        if (result != null) {
+            logger.info("odontologo encontrado: " + result);
+        } else {
+            logger.warn("odontologo con ID " + id + " no encontrado");
+        }
         return result;
     }
 

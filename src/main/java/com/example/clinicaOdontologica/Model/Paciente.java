@@ -1,5 +1,8 @@
 package com.example.clinicaOdontologica.Model;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import java.time.LocalDate;
 
 public class Paciente {
@@ -14,6 +17,10 @@ public class Paciente {
 
     //estalecer los metodos
 
+    @JsonCreator
+    public Paciente(@JsonProperty("id") Long id) {
+        this.id = Math.toIntExact(id);
+    }
 
     public Paciente(String nombre, String apellido, String cedula, LocalDate fechaIngreso, Domicilio domicilio, String email) {
         this.nombre = nombre;

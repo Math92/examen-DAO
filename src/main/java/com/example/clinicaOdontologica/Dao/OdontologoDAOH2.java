@@ -1,36 +1,40 @@
 package com.example.clinicaOdontologica.Dao;
+
 import com.example.clinicaOdontologica.Model.Odontologo;
 import org.apache.log4j.Logger;
+import org.springframework.stereotype.Repository;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
-
-public class OdontologoDAOH2 implements iDao<Odontologo> {
+@Repository
+public class OdontologoDAOH2 implements iDao<Odontologo>{
     private static final Logger logger=Logger.getLogger(OdontologoDAOH2.class);
-    private static final String SQL_INSERT="INSERT INTO ODONTOLOGOS VALUES(?,?,?)";
-    private static final String SQL_SELECT="SELECT * FROM ODONTOLOGOS";
-
+    private static final String SQL_INSERT="INSERT INTO ODONTOLOGOS (NOMBRE, APELLIDO, MATRICULA) VALUES(?,?,?)";
+    private static final String SQL_SELECT_ALL="SELECT * FROM ODONTOLOGOS";
+    private static final String SQL_SELECT_ONE="SELECT * FROM ODONTOLOGOS WHERE ID=?";
     @Override
     public Odontologo guardar(Odontologo odontologo) {
         logger.info("iniciando las operaciones de : guardado de: "+odontologo.getNombre());
-        Connection connection=null;
-        try {
-            connection = BD.getConnection();
-            Statement statement = connection.createStatement();
-            PreparedStatement psInsert = connection.prepareStatement(SQL_INSERT,Statement.RETURN_GENERATED_KEYS);
-            psInsert.setString(1, odontologo.getNumeroMatricula());
-            psInsert.setString(2, odontologo.getNombre());
-            psInsert.setString(3, odontologo.getApellido());
-            psInsert.execute();
 
+        Connection connection=null;
+        try{
+            connection=BD.getConnection();
+            PreparedStatement psInsert= connection.prepareStatement(SQL_INSERT, Statement.RETURN_GENERATED_KEYS);
+            psInsert.setString(1, odontologo.getNombre());
+            psInsert.setString(2, odontologo.getApellido());
+            psInsert.setString(3, odontologo.getNumeroMatricula());
+            psInsert.execute();
             ResultSet rs= psInsert.getGeneratedKeys();
             while(rs.next()){
                 odontologo.setId(rs.getInt(1));
             }
-        }catch(Exception e){
+            logger.info("odontologo cargado : "+odontologo.getId());
+
+        }catch (Exception e){
             logger.error("problemas con la BD"+e.getMessage());
         }
         return odontologo;
@@ -43,38 +47,62 @@ public class OdontologoDAOH2 implements iDao<Odontologo> {
 
     @Override
     public void eliminar(Integer id) {
+        logger.info("iniciando las operaciones de : eliminar un odontologo con id:  de"+id);
+        Connection connection=null;
+        try{
+            connection=BD.getConnection();
+
+        }catch (Exception e){
+            logger.error("problemas con la BD"+e.getMessage());
+        }
 
     }
 
     @Override
     public List<Odontologo> listarTodos() {
-        logger.info("iniciando las operaciones de listado");
+        logger.info("iniciando las operaciones de : listar los odontologos: ");
+        List<Odontologo> listaOdontologos= new ArrayList<>();
+        Odontologo odontologo= null;
         Connection connection=null;
-        List<Odontologo> odontologos = new ArrayList<>();
         try{
             connection=BD.getConnection();
-            Statement statement = connection.createStatement();
-//            PreparedStatement psListarTodos = connection.prepareStatement(SQL_SELECT);
-//            psListarTodos.setString();
-            ResultSet rs = statement.executeQuery(SQL_SELECT);
-            while (rs.next()) {
-                int id = rs.getInt("ID");
-                String numeroMatricula = rs.getString("NUMERO_MATRICULA");
-                String nombre = rs.getString("NOMBRE");
-                String apellido = rs.getString("APELLIDO");
-                Odontologo odontologo = new Odontologo(id, numeroMatricula, nombre, apellido);
-                odontologos.add(odontologo);
+            Statement statement= connection.createStatement();
+            ResultSet rs= statement.executeQuery(SQL_SELECT_ALL);
+            while(rs.next()){
+                odontologo= new Odontologo(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4));
+                listaOdontologos.add(odontologo);
             }
+            for (Odontologo odontologo1 : listaOdontologos) {
 
+                System.out.println("ID: "+odontologo1.getId()+" Nombre : "+odontologo1.getNombre()+" Apellido: "+odontologo1.getNombre()+" Matricula: "+odontologo1.getNumeroMatricula());
+                System.out.println("**********************************************************************************");
 
-        }catch(Exception e){
-            logger.error("problemas al listar en la BD "+e.getMessage());
+            }
+        }catch (Exception e){
+            logger.error("problemas con la BD"+e.getMessage());
         }
-        return odontologos;
+        return listaOdontologos;
     }
 
     @Override
     public Odontologo buscarporId(Integer id) {
-        return null;
+        logger.info("iniciando las operaciones de : busqueda un odontologo con id:  de "+id);
+        Odontologo odontologo=null;
+        Connection connection=null;
+        try{
+            connection=BD.getConnection();
+            PreparedStatement psSelectOne= connection.prepareStatement(SQL_SELECT_ONE);
+            psSelectOne.setInt(1,id);
+            ResultSet rs= psSelectOne.executeQuery();
+            while(rs.next()){
+                odontologo= new Odontologo(rs.getInt(1),rs.getString(2),rs.getString(3),rs.getString(4));
+            }
+            logger.info("odontologo encontrado: "+odontologo.getNombre());
+
+        }catch (Exception e){
+            logger.error("problemas con la BD"+e.getMessage());
+        }
+        return odontologo;
     }
+
 }

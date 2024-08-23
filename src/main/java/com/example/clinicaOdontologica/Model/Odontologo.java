@@ -1,5 +1,8 @@
 package com.example.clinicaOdontologica.Model;
 
+import com.fasterxml.jackson.annotation.JsonCreator;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 public class Odontologo {
     private Integer id;
     private String nombre;
@@ -10,6 +13,11 @@ public class Odontologo {
         this.apellido = apellido;
         this.nombre = nombre;
         this.numeroMatricula = numeroMatricula;
+    }
+
+    @JsonCreator
+    public Odontologo(@JsonProperty("id") Long id) {
+        this.id = Math.toIntExact(id);
     }
 
     public Odontologo(Integer id, String numeroMatricula, String nombre, String apellido) {
