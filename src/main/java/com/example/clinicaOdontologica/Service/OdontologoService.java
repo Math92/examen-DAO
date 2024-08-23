@@ -24,6 +24,10 @@ public class OdontologoService {
         return result;
     }
 
+    public void actualizarOdontologo(Odontologo odontologo){
+        odontologoiDao.actualizar(odontologo);
+    }
+
     public Odontologo buscarPorID(Integer id){
         logger.info("Buscando odontologo con ID: " + id);
         Odontologo result = odontologoiDao.buscarporId(id);

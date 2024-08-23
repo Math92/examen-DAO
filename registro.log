@@ -254,3 +254,19 @@
 [2024-08-22 20:56:03] [ INFO ] [OdontologoDAOH2:89] iniciando las operaciones de : busqueda un odontologo con id:  de 1
 [2024-08-22 20:56:03] [ INFO ] [OdontologoDAOH2:100] odontologo encontrado: Santos
 [2024-08-22 20:56:03] [ INFO ] [TurnoDAOLISTA:20] turno guardado con exito
+[2024-08-22 22:00:03] [ INFO ] [PacienteService:28] Buscando paciente con ID: 1
+[2024-08-22 22:00:03] [ INFO ] [PacienteDAOH2:175] Iniciando las operaciones de: búsqueda de paciente con ID: 1
+[2024-08-22 22:00:03] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 1
+[2024-08-22 22:00:03] [ INFO ] [PacienteService:31] Paciente encontrado: com.example.clinicaOdontologica.Model.Paciente@766a2647
+[2024-08-22 22:00:03] [ INFO ] [OdontologoService:28] Buscando odontologo con ID: 1
+[2024-08-22 22:00:03] [ INFO ] [OdontologoDAOH2:89] iniciando las operaciones de : busqueda un odontologo con id:  de 1
+[2024-08-22 22:00:03] [ INFO ] [OdontologoDAOH2:100] odontologo encontrado: Santos
+[2024-08-22 22:00:03] [ INFO ] [OdontologoService:31] odontologo encontrado: com.example.clinicaOdontologica.Model.Odontologo@1a422e2e
+[2024-08-22 22:00:03] [ INFO ] [PacienteDAOH2:175] Iniciando las operaciones de: búsqueda de paciente con ID: 1
+[2024-08-22 22:00:03] [ INFO ] [DomicilioDAOH2:49] iniciando las operaciones de : busqueda de un domicilio con ID: 1
+[2024-08-22 22:00:03] [ INFO ] [OdontologoDAOH2:89] iniciando las operaciones de : busqueda un odontologo con id:  de 1
+[2024-08-22 22:00:03] [ INFO ] [OdontologoDAOH2:100] odontologo encontrado: Santos
+[2024-08-22 22:00:03] [ INFO ] [TurnoDAOLISTA:20] turno guardado con exito
+[2024-08-22 22:03:35] [ INFO ] [BD:32] datos cargados con exito
+[2024-08-22 22:40:41] [ INFO ] [BD:32] datos cargados con exito
+[2024-08-22 22:51:24] [ INFO ] [BD:32] datos cargados con exito

@@ -74,7 +74,7 @@ public class OdontologoDAOH2 implements iDao<Odontologo>{
             }
             for (Odontologo odontologo1 : listaOdontologos) {
 
-                System.out.println("ID: "+odontologo1.getId()+" Nombre : "+odontologo1.getNombre()+" Apellido: "+odontologo1.getNombre()+" Matricula: "+odontologo1.getNumeroMatricula());
+                System.out.println("ID: "+odontologo1.getId()+" Nombre : "+odontologo1.getNombre()+" Apellido: "+odontologo1.getApellido()+" Matricula: "+odontologo1.getNumeroMatricula());
                 System.out.println("**********************************************************************************");
 
             }
